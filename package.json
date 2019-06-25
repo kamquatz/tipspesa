@@ -2,7 +2,7 @@
   "name": "jv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://seunzone.github.io/TD-React-Challenge-Test-1",
+  "homepage": "https://kamquatz.github.io/tipspesa",
   "dependencies": {
     "bootstrap": "3",
     "gh-pages": "^2.0.1",
