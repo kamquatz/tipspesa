@@ -68,7 +68,7 @@
 
    function Load(day){
      $("#new-posts-div").html(localStorage.getItem(day));
-     var url = "185.141.62.34/tipspesa/load-"+day+".php";
+     var url = "//185.141.62.34/tipspesa/load-"+day+".php";
      $.get(url)
      .done(function( data, textStatus, jqXHR ) {
       if(data.includes('div')){
@@ -82,7 +82,7 @@
    }
 
    function LoadOnly(day){
-    var url = "185.141.62.34/tipspesa/load-"+day+".php";
+    var url = "//185.141.62.34/tipspesa/load-"+day+".php";
      $.get(url)
      .done(function( data, textStatus, jqXHR ) {
         if(data.includes('div')) localStorage.setItem(day,data); 
