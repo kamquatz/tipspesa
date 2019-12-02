@@ -7,13 +7,13 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="http://185.141.62.34/tipspesa/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="185.141.62.34/tipspesa/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="http://185.141.62.34/tipspesa/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="185.141.62.34/tipspesa/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="http://185.141.62.34/tipspesa/bower_components/Ionicons/css/ionicons.min.css">
-  <link rel="stylesheet" href="http://185.141.62.34/tipspesa/dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="http://185.141.62.34/tipspesa/dist/css/_all-skins.min.css">
+  <link rel="stylesheet" href="185.141.62.34/tipspesa/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="185.141.62.34/tipspesa/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="185.141.62.34/tipspesa/dist/css/_all-skins.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <style>
     p{
@@ -36,7 +36,7 @@
   </header>
 
     <!-- Main content -->
-  <section id="mainContent" class="content" style="background-image:url('"http://185.141.62.34/tipspesa/dist/img/bg.png')">
+  <section id="mainContent" class="content" style="background-image:url('"185.141.62.34/tipspesa/dist/img/bg.png')">
       <div id="new-posts-div" class="row"></div>
     </section>
     <!-- /.content -->
@@ -45,15 +45,15 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script async src="http://185.141.62.34/tipspesa/bower_components/jquery/dist/jquery.min.js"></script>
+<script async src="185.141.62.34/tipspesa/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script async src="http://185.141.62.34/tipspesa/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script async src="185.141.62.34/tipspesa/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Slimscroll -->
-<script async src="http://185.141.62.34/tipspesa/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script async src="185.141.62.34/tipspesa/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script async src="http://185.141.62.34/tipspesa/bower_components/fastclick/lib/fastclick.js"></script>
+<script async src="185.141.62.34/tipspesa/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script async src="http://185.141.62.34/tipspesa/dist/js/adminlte.min.js"></script>
+<script async src="185.141.62.34/tipspesa/dist/js/adminlte.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script>
@@ -68,7 +68,7 @@
 
    function Load(day){
      $("#new-posts-div").html(localStorage.getItem(day));
-     var url = "http://185.141.62.34/tipspesa/load-"+day+".php";
+     var url = "185.141.62.34/tipspesa/load-"+day+".php";
      $.get(url)
      .done(function( data, textStatus, jqXHR ) {
       if(data.includes('div')){
@@ -82,7 +82,7 @@
    }
 
    function LoadOnly(day){
-    var url = "http://185.141.62.34/tipspesa/load-"+day+".php";
+    var url = "185.141.62.34/tipspesa/load-"+day+".php";
      $.get(url)
      .done(function( data, textStatus, jqXHR ) {
         if(data.includes('div')) localStorage.setItem(day,data); 
