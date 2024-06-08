@@ -1,0 +1,31 @@
+{
+    "name": "TIPSPESA-APP",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "appPort": [
+        3000
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "github.vscode-github-actions",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "dsznajder.es7-react-js-snippets",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode.vscode-typescript-tslint-plugin"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux#": "/bin/bash"
+            }
+        }
+    },
+    "postCreateCommand": "npm install",
+    "remoteEnv": {
+      "NEXT_PUBLIC_SUPABASE_URL": "your-supabase-url",
+      "NEXT_PUBLIC_SUPABASE_KEY": "your-supabase-key"
+    }
+}
